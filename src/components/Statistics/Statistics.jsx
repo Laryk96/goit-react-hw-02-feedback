@@ -11,11 +11,11 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
     <section>
       <Title>Statistics</Title>
       <StatisticList>
-        <StatisticItem>good: {good}</StatisticItem>
-        <StatisticItem>neutral: {neutral}</StatisticItem>
-        <StatisticItem>bad: {bad}</StatisticItem>
+        <StatisticItem>Good: {good}</StatisticItem>
+        <StatisticItem>Neutral: {neutral}</StatisticItem>
+        <StatisticItem>Bad: {bad}</StatisticItem>
       </StatisticList>
-      <Label>total: {total}</Label>
+      <Label>Total: {total}</Label>
       <Text>Positive feedback {positivePercentage}%</Text>
     </section>
   );

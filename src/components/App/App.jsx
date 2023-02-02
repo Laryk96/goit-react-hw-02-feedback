@@ -6,9 +6,9 @@ import { Notification } from 'components/Notification';
 import { Container } from './App.styled';
 class App extends React.Component {
   state = {
-    good: 0,
-    neutral: 0,
-    bad: 0,
+    Good: 0,
+    Neutral: 0,
+    Bad: 0,
   };
 
   hendleCounter = e => {
