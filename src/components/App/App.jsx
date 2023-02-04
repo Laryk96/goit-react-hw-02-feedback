@@ -22,20 +22,20 @@ class App extends React.Component {
   };
 
   countPositiveFeedbackPercentage = () => {
-    const { good, neutral } = this.state;
+    const { Good, Neutral } = this.state;
     const totalFeedback = this.countTotalFeedback();
 
-    if (good === 0) {
-      return Math.round((neutral / totalFeedback) * 50);
+    if (Good === 0) {
+      return Math.round((Neutral / totalFeedback) * 50);
     }
 
-    return Math.round((good / totalFeedback) * 100);
+    return Math.round((Good / totalFeedback) * 100);
   };
 
   render() {
     const statisticsList = Object.keys(this.state);
-
     const percentage = this.countPositiveFeedbackPercentage();
+
     const totalFeedback = this.countTotalFeedback();
     return (
       <Container>
