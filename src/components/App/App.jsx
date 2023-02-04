@@ -46,9 +46,9 @@ class App extends React.Component {
 
         {totalFeedback !== 0 ? (
           <Statistics
-            good={this.state.good}
-            neutral={this.state.neutral}
-            bad={this.state.bad}
+            good={this.state.Good}
+            neutral={this.state.Neutral}
+            bad={this.state.Bad}
             total={totalFeedback}
             positivePercentage={percentage}
           ></Statistics>

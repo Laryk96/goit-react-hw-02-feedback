@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import {
   Titile,
   FeedbackList,
@@ -20,4 +22,8 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   );
 };
 
+FeedbackOptions.propTypes = {
+  onLeaveFeedback: PropTypes.func.isRequired,
+  options: PropTypes.arrayOf(PropTypes.string),
+};
 export { FeedbackOptions };
